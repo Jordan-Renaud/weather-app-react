@@ -1,0 +1,88 @@
+.WeatherApp .main-box {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+  width: 70vw;
+  height: 70vh;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.WeatherApp .default-box {
+  background: linear-gradient(134.17deg, #eef0f5 4.98%, #e6e9ef 94.88%);
+  box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8),
+    10px 10px 24px rgba(166, 180, 200, 0.7);
+  border-radius: 1rem;
+}
+
+.WeatherApp header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.WeatherApp header .location {
+  margin: 0;
+  padding-top: 2vh;
+  padding-left: 2vw;
+}
+
+.WeatherApp header .date {
+  margin: 0;
+  padding-left: 2vw;
+  font-weight: 100;
+}
+
+.WeatherApp header .search-location {
+  margin-top: 2vh;
+  margin-right: 2vw;
+  width: 50%;
+  text-align: right;
+}
+
+.WeatherApp header .search-location input {
+  border-color: transparent;
+  height: 2.5rem;
+  width: 15rem;
+  background: linear-gradient(134.17deg, #eef1f5 4.98%, #e6e9ef 94.88%);
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75),
+    inset 5px 5px 10px rgba(166, 180, 200, 0.75);
+  border-radius: 40px;
+  padding-left: 0.8rem;
+  font-family: "Montserrat Alternates", FontAwesome;
+}
+
+.WeatherApp .search-location input:focus {
+  outline: none;
+}
+
+.WeatherApp .get-location-button {
+  position: relative;
+  top: 0.7vh;
+}
+
+.WeatherApp .get-location-button img {
+  width: 1.5rem;
+}
+
+.WeatherApp .default-button {
+  border-color: transparent;
+  background: linear-gradient(134.17deg, #eef0f5 4.98%, #e6e9ef 94.88%);
+  box-shadow: inset 9.91px 9.91px 15px rgba(255, 255, 255, 0),
+    inset -9.91px -9.91px 15px rgba(255, 255, 255, 0),
+    -12px -12px 20px rgba(255, 255, 255, 0.8),
+    10px 10px 24px rgba(166, 180, 200, 0.7);
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.WeatherApp .default-button:hover {
+  box-shadow: inset 9.91px 9.91px 15px #d9dade,
+    inset -9.91px -9.91px 15px #ffffff, -12px -12px 20px rgba(29, 17, 17, 0),
+    10px 10px 24px rgba(166, 180, 200, 0);
+  cursor: pointer;
+}
+
+.WeatherApp .default-button:focus {
+  outline: none;
+}

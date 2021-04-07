@@ -1,0 +1,85 @@
+.Weather .todays-weather {
+  padding-top: 6vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vw;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.Weather .todays-weather .current-weather {
+  margin-right: 0.5vw;
+}
+
+.Weather .current-weather img {
+  display: inline;
+  height: 6rem;
+  width: auto;
+  max-width: 6rem;
+  object-fit: contain;
+}
+
+.Weather .current-weather .current-temp {
+  display: inline;
+  font-size: 8rem;
+  font-weight: 600;
+}
+
+.Weather .celius-to-farenheit {
+  position: relative;
+  top: -8vh;
+}
+
+.Weather .weather-description {
+  position: relative;
+  font-size: 2rem;
+  margin: 0;
+  top: -1vh;
+}
+
+.Weather .todays-weather .details {
+  text-align: left;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  height: auto;
+  margin-left: 0.5vw;
+}
+
+.Weather .grid-container {
+  display: grid;
+  grid-template-columns: 4rem 10rem;
+  grid-template-rows: 3rem 3rem;
+}
+
+.Weather .todays-weather .details .label {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.Weather .todays-weather .details .data {
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.Weather .todays-weather .details img {
+  width: 2rem;
+}
+
+.Weather .icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.Weather .future-forecast {
+  display: flex;
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+  justify-content: space-evenly;
+}
