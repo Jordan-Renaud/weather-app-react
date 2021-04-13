@@ -10,7 +10,7 @@ export default function App() {
         <p>created by Jordan Renaud</p>
         <a
           className="github-link"
-          href="https://github.com/Jordan-Renaud/neumorphic_weather_app"
+          href="https://github.com/Jordan-Renaud/weather-app-react"
           >Check out the code on github</a
         >
         <br />
