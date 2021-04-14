@@ -51,18 +51,10 @@ function weatherCodeToImg(code, isDayTime) {
 };
 
 export default function Weather(props) {
-  let [openWeatherJSON, setOpenWeatherJSON] = useState(null);
-  let [accuweatherJSON, setaccuweatherJSON] = useState(null);
+  const openWeatherJSON = props.openWeather;
+  const accuweatherJSON = props.accuweather;
 
-  useEffect(() => {
-    if (props.openWeather) {
-      setOpenWeatherJSON(props.openWeather)
-      setaccuweatherJSON(props.accuweather)
-    }
-  }, [props.openWeather]);
-  
-
-  if (openWeatherJSON == null) {
+  if (openWeatherJSON == null || accuweatherJSON == null) {
     return <div></div>
   } else {
     const currentTemp = Math.floor(openWeatherJSON.list[0].main.temp);
