@@ -79,6 +79,31 @@ export default function WeatherApp() {
     apiCall(lat, lon);
   }
 
+  function getDate(JSON) {
+    const date = JSON.list[0].dt_txt.split(" ")[0];
+    const months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    const year = date.substr(0, 4);
+    const month = months[parseInt(date.substr(5, 2)) - 1];
+    const day = parseInt(date.substr(8, 2));
+    const formatedDate = `${day} ${month} ${year}`;
+
+    return formatedDate;
+  }
+
   return (
     <div className="WeatherApp">
       <div className="main-box default-box">
@@ -90,7 +115,7 @@ export default function WeatherApp() {
                 : null}
             </h1>
             <h2 className="date">
-              Tuesday 16<sup>th</sup>, March
+              {openWeatherJSON ? `${getDate(openWeatherJSON)}` : null}
             </h2>
           </div>
 
